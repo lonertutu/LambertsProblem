@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.17)
+set(GOOGLETEST_VERSION 1.13.0)
+
+project(LambertsProblem)
+enable_testing()
+find_package(GTest REQUIRED)
+add_executable(test Lambert.cpp)
+target_include_directories(test PUBLIC ${gtest_SOURCE_DIR} ${gtest_SOURCE_DIR}/include)
+include_directories(../../LambertsProblem)
+target_link_libraries(test LambertsProblem GTest::gtest GTest::gtest_main)
+add_test(NAME test COMMAND test)
