@@ -5,7 +5,7 @@ Two vectors are supplied: the vector of the Initial orbit and the final.
 
 $r_1$ and $r_2$ determine the change in the true anomaly $\Delta \theta$.
 
-$$ \cos{ \Delta \theta} = __r_1__ \dot __r_2__ \over r_1 r_2 $$
+$$ \cos{ \Delta \theta} = (__r_1__ \dot __r_2__ \over r_1 r_2) $$
 
 There are two cases to consider: prograde trajectories $(0 < i < 90^{\circ})$, and retrograde
 trajectories $(90^{\circ}< i < 180^{\circ})$.
